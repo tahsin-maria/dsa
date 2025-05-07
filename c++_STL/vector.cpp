@@ -69,9 +69,5 @@ int main()
         cout << *it << " ";
     } // same and preferred
 
-     //unique() --> puts all duplicates at the end 
-    vector<int> v2 = {1, 2, 3, 4, 5,7,9,1,2,0,3,4,5,2,7,5};
-    auto i=unique(v2.begin(),v2.end());
-    v2.erase(i,v.end());
-    //erases the duplicates from the vector
+    
 }
