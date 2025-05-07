@@ -70,6 +70,12 @@ int main()
 
     sort(v.begin(), v.end()); // Ensure the vector is sorted in ascending order
     cout << binary_search(v.begin(), v.end(), 4) << endl; // returns 1 or 0
+
+     //unique() --> puts all duplicates at the end 
+    vector<int> v2 = {1, 2, 3, 4, 5,7,9,1,2,0,3,4,5,2,7,5};
+    auto i=unique(v2.begin(),v2.end());
+    v2.erase(i,v.end());
+    //erases the duplicates from the vector
     
     return 0;
 }
